@@ -408,7 +408,7 @@ ps.dat <- phyloseq(otu_table(seqtab.filtered, taxa_are_rows=FALSE),
 
 # PERMANOVA
 metadata <- as(sample_data(ps.dat), "data.frame")
-adonis(philr.dist ~ Season, data=metadata)
+adonis(philr.dist ~ Group, data=metadata)
 
 ##########################
 #WEIGHTED UNIFRAC DISTANCE
